@@ -1,5 +1,5 @@
 <?php
-  // Get all the related keywords from Google Suggest
+  // Get all the related keywords from Google 
   $u = "http://google.com/complete/search?output=toolbar";
   $u = $u . "&q=" . $_REQUEST['msg'];
 
@@ -16,5 +16,6 @@
   $result = $xml->xpath('//@data');
   while (list($key, $value) = each($result)) {
     echo $value ."<br>";
+echo "jyotsna"
   }
 ?>
